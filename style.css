@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* NAVBAR */
+
+nav{
+    background: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 8%;
+}
+
+nav h2{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: left;
+
+    background: #fffeff;
+    padding: 10px;
+}
+
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    max-width: 700px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button{
+    background: #f59e0b;
+    color: white;
+
+    border: none;
+    padding: 15px 35px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+    font-size: 1rem;
+
+    transition: 0.5s;
+}
+
+.hero button:hover{
+    background: #d97706;
+    transform: scale(1.05);
+}
+
+/* FEATURES SECTION */
+
+.features{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    padding: 50px 10%;
+    background: white;
+}
+
+.services h1{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    padding: 80px 10%;
+    background: white;
+}
+
+.card{
+    background: rgb(250, 246, 196);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    text-align: center;
+
+    flex: 1;
+    min-width: 250px;
+
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2{
+    margin-bottom: 20px;
+}
+
+.about p{
+    max-width: 800px;
+    margin: auto;
+}
+
+.aboutcss{
+    background-color: rgba(225,239,188,0.4);
+}
+
+/* CONTACT SECTION */
+
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+.contact p{
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+    min-height: 80vh;
+    background: #f3f4f6;
+}
+
+.contact h1{
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.contact p{
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button{
+    background: #f59e0b;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background: #d97706;
+}
