@@ -51,6 +51,7 @@ nav a:hover{
 /* HERO SECTION */
 
 .hero{
+    position: relative;
     min-height: 70vh;
 
     display: flex;
@@ -59,26 +60,59 @@ nav a:hover{
     align-items: center;
 
     text-align: center;
-
-   background: #f3f4f6;
+    overflow: hidden;
 
     padding: 80px 10%;
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    z-index: -2;
+}
+.about{
+    position: relative;
+}
+
+.about-img{
+    width: 500px;
+    height: 400px;
+    float: right;
+    margin: 1 0 20px 30px;
+    margin-top:20px ;
+    border-radius: 12px;
+}
+
+/* Dark overlay for readability */
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .hero h2{
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #111827;
+    color: white;
+}
+
+.hero h3{
+    color: #fbbf24;
 }
 
 .hero p{
     max-width: 750px;
     font-size: 1.15rem;
     margin-bottom: 30px;
-    color: #4b5563;
-}
-.hero h3{
-    color:#010e34
+    color: #f3f4f6;
 }
 
 /* BUTTONS */
