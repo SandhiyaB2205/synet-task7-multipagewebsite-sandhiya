@@ -6,6 +6,7 @@
     <title>ABOUT US</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body >
     <header>
         <nav>
@@ -60,40 +61,20 @@ Over the years, we have trained hundreds of students, helping them build strong 
     </div>
 
 </section>
-<section class="about-slider">
-    <div class="slide">
-        <h2>About Grandmaster Chess Academy</h2>
-        <p>
-            Founded in 2015, Grandmaster Chess Academy was established with the
-            vision of nurturing young chess talent and promoting strategic
-            thinking among students of all ages.
-        </p>
-        <p>
-            Over the years, we have trained hundreds of students, helping them
-            build strong chess foundations and achieve success in competitive
-            tournaments.
-        </p>
-    </div>
 
-    <div class="slide">
-        <h2>Our Mission</h2>
-        <p>
-            To provide high-quality chess education that develops critical
-            thinking, problem-solving abilities, patience, and confidence while
-            preparing students for competitive success.
-        </p>
-    </div>
-
-    <div class="slide">
-        <h2>Our Vision</h2>
-        <p>
-            To become one of the leading chess academies by creating future
-            champions and inspiring lifelong learning through the game of chess.
-        </p>
-    </div>
-</section>
 <footer>
         <p>&copy; 2026 Magnus Chess Academy. All Rights Reserved.</p>
 </footer>
 </body>
+<script>
+const slides = document.getElementById("slides");
+const dots = document.querySelectorAll(".dot");
+
+function showSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+}
+</script>
 </html>

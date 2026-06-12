@@ -47,9 +47,6 @@ nav a{
 nav a:hover{
     color: #f59e0b;
 }
-
-/* HERO SECTION */
-
 .hero{
     position: relative;
     min-height: 70vh;
@@ -89,7 +86,6 @@ nav a:hover{
     border-radius: 12px;
 }
 
-/* Dark overlay for readability */
 .hero::before{
     content: "";
     position: absolute;
@@ -115,7 +111,7 @@ nav a:hover{
     color: #f3f4f6;
 }
 
-/* BUTTONS */
+
 
 .button{
     display: flex;
@@ -148,7 +144,6 @@ nav a:hover{
     transform: translateY(-3px);
 }
 
-/* FEATURES */
 
 .features{
     display: flex;
@@ -224,7 +219,6 @@ nav a:hover{
     color: #111827;
 }
 
-/* ABOUT */
 
 .about{
     padding: 70px 10%;
@@ -249,7 +243,6 @@ nav a:hover{
 
 
 
-/* CONTACT */
 
 .contact{
     padding: 80px 10%;
@@ -268,7 +261,6 @@ nav a:hover{
     color: #6b7280;
 }
 
-/* CONTACT FORM */
 
 .contact-form{
     max-width: 600px;
@@ -348,7 +340,6 @@ nav a:hover{
     margin:0;
 }
 
-/* FOOTER */
 
 footer{
     background: #010e34;
@@ -382,59 +373,6 @@ footer{
     background: #d97706;
     transform: translateY(-3px);
 }
-
-.about-slider {
-    position: relative;
-    max-width: 900px;
-    height: 280px;
-    margin: 50px auto;
-    overflow: hidden;
-    background: linear-gradient(135deg, #010429, #0f023f, #1a0b5c);
-    border-radius: 15px;
-    color: white;
-    padding: 40px;
-}
-
-.slide {
-    position: absolute;
-    inset: 0;
-    padding: 40px;
-    opacity: 0;
-    animation: slider 12s infinite;
-}
-
-.slide:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.slide:nth-child(2) {
-    animation-delay: 4s;
-}
-
-.slide:nth-child(3) {
-    animation-delay: 8s;
-}
-
-.slide h2 {
-    color: #fbbf24;
-    margin-bottom: 20px;
-}
-
-.slide p {
-    line-height: 1.8;
-}
-
-@keyframes slider {
-    0%, 28% {
-        opacity: 1;
-    }
-
-    33%, 100% {
-        opacity: 0;
-    }
-}
-
-/* RESPONSIVE 
 
 @media(max-width:768px){
 
@@ -476,4 +414,3 @@ footer{
         padding: 60px 5%;
     }
 }
-*/
